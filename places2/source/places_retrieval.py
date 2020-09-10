@@ -7,6 +7,9 @@ from sklearn.preprocessing import normalize
 
 if __name__ == '__main__':
 
+    # Run encode.py first to generate and save feature vectors for the query and database images prior to running
+    # this script
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--query_features", type=str,
                         default=r"places2\feature_vectors\standard\places2_0.2_DF-Net.dat",
