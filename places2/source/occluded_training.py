@@ -145,10 +145,10 @@ def main():
         best_prec1 = max(prec1, best_prec1)
         save_checkpoint({
             'epoch': epoch + 1,
-            'arch': args.arch,
+            'arch': 'resnet18',
             'state_dict': model.state_dict(),
             'best_prec1': best_prec1,
-        }, is_best, args.arch.lower())
+        }, is_best, args.occlusion_method)
 
 
 def generate_cutout_mask(data, num_masks, mask_length):
@@ -210,7 +210,7 @@ def train(train_loader, model, criterion, optimizer, epoch, human_masks=None):
     end = time.time()
     for i, (input, target) in enumerate(train_loader):
 
-        if args.train_method == 'cutout' or args.train_method =='irreg':
+        if args.train_method == 'cutout' or args.train_method == 'irreg':
             if args.train_method == 'cutout':
                 masked_input = generate_cutout_mask(input, args.num_masks, args.mask_length)
             else:
@@ -218,7 +218,7 @@ def train(train_loader, model, criterion, optimizer, epoch, human_masks=None):
             input = torch.cat([input, masked_input])
             target = target.repeat(2)
 
-        elif args.train_method == 'abby':
+        elif args.train_method == 'hso':
             input = human_masks_batch(input, human_masks)
 
         data_time.update(time.time() - end)
@@ -301,10 +301,10 @@ def validate(val_loader, model, criterion):
     return top1.avg
 
 
-def save_checkpoint(state, is_best, filename='checkpoint.pth.tar'):
-    torch.save(state, filename + '_latest.pth.tar')
+def save_checkpoint(state, is_best, method):
+    torch.save(state, method + '_latest.pth.tar')
     if is_best:
-        shutil.copyfile(filename + '_latest.pth.tar', filename + '_best.pth.tar')
+        shutil.copyfile(method + '_latest.pth.tar', method + '_best.pth.tar')
 
 
 class AverageMeter(object):
