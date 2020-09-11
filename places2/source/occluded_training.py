@@ -302,9 +302,11 @@ def validate(val_loader, model, criterion):
 
 
 def save_checkpoint(state, is_best, method):
-    torch.save(state, method + '_latest.pth.tar')
+    save_dir = 'places2/weights'
+    torch.save(state, os.path.join(save_dir, 'resnet18_{}_latest.pth.tar'.format(method)))
     if is_best:
-        shutil.copyfile(method + '_latest.pth.tar', method + '_best.pth.tar')
+        shutil.copyfile(os.path.join(save_dir, 'resnet18_{}_latest.pth.tar'.format(method)),
+        os.path.join(save_dir, 'resnet18_{}_best.pth.tar'.format(method)))
 
 
 class AverageMeter(object):
