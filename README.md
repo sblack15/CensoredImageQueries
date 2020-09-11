@@ -30,3 +30,28 @@ Planar Structure Guidance \[4]
 [Free-Form Image Inpainting with Gated Convolution](https://github.com/JiahuiYu/generative_inpainting) \[11]
 
 [StructureFlow](https://github.com/RenYurui/StructureFlow) \[12]
+
+References
+\[1] Bertalmio  M,  Bertozzi  AL,  Sapiro  G  (2001)  Navier-stokes, fluid dynamics, and image and video inpainting. In: Proc. IEEE Conference on Computer Visionand Pattern Recognition
+
+\[2] Telea A (2004) An image inpainting technique based onthe fast marching method. Journal of Graphics Tools, pp 23–34
+
+\[3] Barnes C, Shechtman E, Finkelstein A, Goldman DB(2009) Patchmatch: A randomized correspondence algorithm for structural image editing. ACM Transactions on Graphics
+
+\[4] Huang  JB,  Kang  SB,  Ahuja  N,  Kopf  J  (2014)  Image completion  using  planar  structure  guidance.  ACM Transactions on Graphic 33(4):1–10
+
+\[5] Zheng C, Cham TJ, Cai J (2019) Pluralistic image completion. In: Proc. IEEE Conference on Computer Vision and Pattern Recognition, pp 1438–1447
+
+\[6] Wang  Y,  Tao  X,  Qi  X,  Shen  X,  Jia  J  (2018)  Image inpainting via generative multi-column convolutionalneural networks. In: Advances in Neural Information Processing Systems, pp 331–340
+
+\[7] Iizuka S, Simo-Serra E, Ishikawa H (2017) Globally and locally  consistent  image  completion.  ACM  Transac-tions on Graphics 36(4):1–14
+
+\[8] Yu J, Lin Z, Yang J, Shen X, Lu X, Huang TS (2018 )Generative  image  inpainting  with  contextual  attention. In: Proc. IEEE Conference on Computer Visionand Pattern Recognition, pp 5505–5514
+
+\[9] Nazeri  K,  Ng  E,  Joseph  T,  Qureshi  F,  Ebrahimi  M(2019)  Edgeconnect:  Generative  image  inpaintingwith  adversarial  edge  learning.  IEEE  International Conference on Computer Vision Workshop
+
+\[10] Hong X, Xiong P, Ji R, Fan H (2019) Deep fusion network for image completion. In: ACM Multimedia
+
+\[11] Yu J, Lin Z, Yang J, Shen X, Lu X, Huang TS (2018) Generative  image  inpainting  with  contextual  attention. In: Proc. IEEE Conference on Computer Vision and Pattern Recognition, pp 5505–5514
+
+\[12] Ren  Y,  Yu  X,  Zhang  R,  Li  TH,  Liu  S,  Li  G  (2019)Structureflow:  Image  inpainting  via  structure-awareappearance flow. In: Proc. International Conference on Computer Vision, pp 181–190
