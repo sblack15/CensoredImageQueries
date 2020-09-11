@@ -47,7 +47,7 @@ Planar Structure Guidance \[4]
 
 \[7] Iizuka S, Simo-Serra E, Ishikawa H (2017) Globally and locally  consistent  image  completion.  ACM  Transac-tions on Graphics 36(4):1–14
 
-\[8] Yu J, Lin Z, Yang J, Shen X, Lu X, Huang TS (2018 )Generative  image  inpainting  with  contextual  attention. In: Proc. IEEE Conference on Computer Visionand Pattern Recognition, pp 5505–5514
+\[8] Yu J, Lin Z, Yang J, Shen X, Lu X, Huang TS (2018) Generative  image  inpainting  with  contextual  attention. In: Proc. IEEE Conference on Computer Visionand Pattern Recognition, pp 5505–5514
 
 \[9] Nazeri  K,  Ng  E,  Joseph  T,  Qureshi  F,  Ebrahimi  M(2019)  Edgeconnect:  Generative  image  inpaintingwith  adversarial  edge  learning.  IEEE  International Conference on Computer Vision Workshop
 
