@@ -31,6 +31,11 @@ Planar Structure Guidance \[4]
 
 [StructureFlow](https://github.com/RenYurui/StructureFlow) \[12]
 
+
+# Training with Occluded Images
+
+For 'places2' and 'hotels50k', we also provide the training scripts to train the ResNet-18 models using the occluded images. Once these models are trained, their weights can be loaded and then can be used to perform the classification / retrieval tasks. We also provide the weights that we trained using various occlusion methods, as well as those trained without any occlusion, [here](https://drive.google.com/drive/folders/13oO5CikiXckYjJ8i5x25Ht1-XiqVQQlK?usp=sharing). All models should be placed in the directory '{places2|hotels50k}/weights'
+
 # References
 
 \[1] Bertalmio  M,  Bertozzi  AL,  Sapiro  G  (2001)  Navier-stokes, fluid dynamics, and image and video inpainting. In: Proc. IEEE Conference on Computer Visionand Pattern Recognition
