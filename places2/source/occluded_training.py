@@ -1,11 +1,7 @@
-# this code is modified from the pytorch example code: https://github.com/pytorch/examples/blob/master/imagenet/main.py
-# after the model is trained, you might use convert_model.py to remove the data parallel module to make the model as standalone weight.
-#
-# Bolei Zhou
+# this code is modified from the pytorch example code on https://github.com/CSAILVision/places365
 
 import argparse
 import os
-import sys
 import shutil
 import time
 
@@ -273,8 +269,8 @@ def validate(val_loader, model, criterion):
     end = time.time()
     for i, (input, target) in enumerate(val_loader):
         target = target.cuda()
-        input_var = torch.autograd.Variable(input, volatile=True)
-        target_var = torch.autograd.Variable(target, volatile=True)
+        input_var = torch.autograd.Variable(input)
+        target_var = torch.autograd.Variable(target)
 
         # compute output
         output = model(input_var)
