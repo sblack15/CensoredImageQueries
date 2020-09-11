@@ -5,6 +5,14 @@ import numpy as np
 from PIL import Image
 import cv2
 
+
+def inpaint_black_mask(image, mask):
+    mask[mask == 0] = 1
+    mask[mask != 1] = 0
+    image = image * np.expand_dims(mask, -1)
+    return image
+
+
 if __name__ == '__main__':
 
     '''
@@ -40,10 +48,15 @@ if __name__ == '__main__':
             Have the method return the inpainted version, as a numpy array
 
             inpainted_image = method.inpaint(image_path, mask_path)
-            As an example, below is an implementation using the Navier-Stokes algorithm from the cv2 library
+            Below are two examples: the first being using the Navier-Stokes algorithm from the cv2 library,
+            and the second simply inpainting using a black mask (setting all pixel values to 0 in the censored regions)
             '''
-            inpainted_image = cv2.inpaint(np.array(Image.open(image_path)),
-                                          np.array(Image.open(mask_path)), 3, cv2.INPAINT_NS)
+            image = np.array(Image.open(image_path))
+            mask = np.array(Image.open(mask_path))
+
+            inpainted_image = cv2.inpaint(image, mask, 3, cv2.INPAINT_NS)
+            # inpainted_image = inpaint_black_mask(image, mask)
+
             # Change the above code to inpaint an image using desired inpainting method
 
             inpainted_image = Image.fromarray(inpainted_image)
