@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--image_dir", type=str, default="places2/images/original",
-                            help='directory of the images to classify')
+                            help='directory of the images to inpaint')
     parser.add_argument("--mask_dir", type=str, default="places2/images/mask")
     parser.add_argument("--mask_level", type=str, default='0.2',
                             help="what percentage of masked image to use. Should be one of '0.1', '0.2', '0.3', '0.4', "
