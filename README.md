@@ -31,7 +31,8 @@ Planar Structure Guidance \[4]
 
 [StructureFlow](https://github.com/RenYurui/StructureFlow) \[12]
 
-References
+# References
+
 \[1] Bertalmio  M,  Bertozzi  AL,  Sapiro  G  (2001)  Navier-stokes, fluid dynamics, and image and video inpainting. In: Proc. IEEE Conference on Computer Visionand Pattern Recognition
 
 \[2] Telea A (2004) An image inpainting technique based onthe fast marching method. Journal of Graphics Tools, pp 23–34
