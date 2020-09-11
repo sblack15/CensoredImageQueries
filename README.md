@@ -36,7 +36,7 @@ Planar Structure Guidance \[4]
 
 # Training with Occluded Images
 
-For 'places2' and 'hotels50k', we also provide the training scripts to train the ResNet-18 models using occluded images. Once these models are trained, their weights can be loaded and then can be used to perform the classification / retrieval tasks. To run training, download the complete (places2)[http://data.csail.mit.edu/places/places365/places365standard_easyformat.tar] /(hotels50k)[https://cs.slu.edu/~stylianou/images/hotels-50k/test.tar.lz4] datasets, and place them in the directory '{places2|hotels50k}/images/complete_set'. We also provide the weights that we trained using the various occlusion methods, as well as those trained without any occlusion, [here](https://drive.google.com/drive/folders/13oO5CikiXckYjJ8i5x25Ht1-XiqVQQlK?usp=sharing). All model weights should be placed in the directory '{places2|hotels50k}/weights'
+For 'places2' and 'hotels50k', we also provide the training scripts to train the ResNet-18 models using occluded images. Once these models are trained, their weights can be loaded and then can be used to perform the classification / retrieval tasks. To run training, download the complete [places2](http://data.csail.mit.edu/places/places365/places365standard_easyformat.tar) /[hotels50k](https://cs.slu.edu/~stylianou/images/hotels-50k/test.tar.lz4) datasets, and place them in the directory '{places2|hotels50k}/images/complete_set'. We also provide the weights that we trained using the various occlusion methods, as well as those trained without any occlusion, [here](https://drive.google.com/drive/folders/13oO5CikiXckYjJ8i5x25Ht1-XiqVQQlK?usp=sharing). All model weights should be placed in the directory '{places2|hotels50k}/weights'
 
 # References
 
