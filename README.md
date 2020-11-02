@@ -7,7 +7,7 @@ For each of the three datasets ('places2', 'hotels50k', and 'celebA') that we pe
 
 For the retrieval experiments, the set of database images for Places2 and CelebA are included in the Drive folder. For Hotels50k, those images can be downloaded following the instructions outlined [here](https://github.com/GWUvision/Hotels-50K).
 
-For Places2 and Hotels50k, the model weights that are used to perform classification and generate feature representations of the images are also included in the drive folder. For CelebA, we use the [Keras-VGGFace] (https://pypi.org/project/keras-vggface/) and [MTCNN face detector](https://pypi.org/project/mtcnn/), whose weights are included in their respective pip packages.
+For Places2 and Hotels50k, the model weights that are used to perform classification and generate feature representations of the images are also included in the drive folder. For CelebA, we use the [Keras-VGGFace](https://pypi.org/project/keras-vggface/) and [MTCNN face detector](https://pypi.org/project/mtcnn/), whose weights are included in their respective pip packages.
 
 Below are the list of inpainting methods that we evaluate in our paper (links to the Github repos of the learning-based methods are provided):
 
