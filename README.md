@@ -1,11 +1,13 @@
 # CensoredImageQueries
-Official Repository for the paper "Evaluation of Inpainting and Augmentation for Censored Image Queries". Currently, we only have the code to reproduce our experiments on the Places2 dataset. Hotels50k and CelebA code will be added soon.
+Official Repository for the paper "Evaluation of Inpainting and Augmentation for Censored Image Queries". Currently, we only have included the code to reproduce our experiments on the Places2 and CelebA dataset. Hotels50k code will be added soon.
 
 # Inpainting
 
-For each of the three datasets ('places2', 'hotels50k', and 'celebA') that we perform our evaluation on, we provide the set of images that are inpainted, the corresponding masks, model weights that are used to perform classification and generate feature representations of the images. These are available in a Google drive [folder](https://drive.google.com/drive/folders/13oO5CikiXckYjJ8i5x25Ht1-XiqVQQlK?usp=sharing). We also provide a script in each dataset directory, called 'inpaint.py', which provides a hook for the user to edit and include the desired inpainting method. This script performs the inpainting and saves the images, using the chosen mask and implemented inpainting method. Once the images for a given mask and method are generated, then the chosen evaluation script (ex: retrieval, classification) can be run for that set of images.
+For each of the three datasets ('places2', 'hotels50k', and 'celebA') that we perform our evaluation on, we provide the set of images that are inpainted and the corresponding masks. These are available in a Google drive [folder](https://drive.google.com/drive/folders/13oO5CikiXckYjJ8i5x25Ht1-XiqVQQlK?usp=sharing). We also provide a script in each dataset directory, called 'inpaint.py', which provides a hook for the user to edit and include the desired inpainting method. This script performs the inpainting and saves the images, using the chosen mask and implemented inpainting method. Once the images for a given mask and method are generated, then the chosen evaluation script (ex: retrieval, classification) can be run for that set of images. 
 
 For the retrieval experiments, the set of database images for Places2 and CelebA are included in the Drive folder. For Hotels50k, those images can be downloaded following the instructions outlined [here](https://github.com/GWUvision/Hotels-50K).
+
+For Places2 and Hotels50k, the model weights that are used to perform classification and generate feature representations of the images are also included in the drive folder. For CelebA, we use the [Keras-VGGFace](https://pypi.org/project/keras-vggface/) and [MTCNN face detector](https://pypi.org/project/mtcnn/), whose weights are included in their respective pip packages.
 
 Below are the list of inpainting methods that we evaluate in our paper (links to the Github repos of the learning-based methods are provided):
 
@@ -36,7 +38,7 @@ Planar Structure Guidance \[4]
 
 # Training with Occluded Images
 
-For 'places2' and 'hotels50k', we also provide the training scripts to train the ResNet-18 models using occluded images. Once these models are trained, their weights can be loaded and then can be used to perform the classification / retrieval tasks. To run training, download the complete [places2](http://data.csail.mit.edu/places/places365/places365standard_easyformat.tar) /[hotels50k](https://cs.slu.edu/~stylianou/images/hotels-50k/test.tar.lz4) datasets, and place them in the directory '{places2|hotels50k}/images/complete_set'. We also provide the weights that we trained using the various occlusion methods, as well as those trained without any occlusion, in the Google drive folder. All model weights should be placed in the directory '{places2|hotels50k}/weights'
+For Places2 and Hotels50k, we also provide the training scripts to train the ResNet-18 models using occluded images. Once these models are trained, their weights can be loaded and then can be used to perform the classification / retrieval tasks. To run training, download the complete [places2](http://data.csail.mit.edu/places/places365/places365standard_easyformat.tar) /[hotels50k](https://cs.slu.edu/~stylianou/images/hotels-50k/test.tar.lz4) datasets, and place them in the directory '{places2|hotels50k}/images/complete_set'. We also provide the weights that we trained using the various occlusion methods, as well as those trained without any occlusion, in the Google drive folder. All model weights should be placed in the directory '{places2|hotels50k}/weights'
 
 # References
 
