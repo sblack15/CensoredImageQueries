@@ -5,7 +5,7 @@ Official Repository for the paper "Evaluation of Inpainting and Augmentation for
 
 For each of the three datasets ('places2', 'hotels50k', and 'celebA') that we perform our evaluation on, we provide the set of images that are inpainted, the corresponding masks, model weights that are used to perform classification and generate feature representations of the images. These are available in a Google drive [folder](https://drive.google.com/drive/folders/13oO5CikiXckYjJ8i5x25Ht1-XiqVQQlK?usp=sharing). We also provide a script in each dataset directory, called 'inpaint.py', which provides a hook for the user to edit and include the desired inpainting method. This script performs the inpainting and saves the images, using the chosen mask and implemented inpainting method. Once the images for a given mask and method are generated, then the chosen evaluation script (ex: retrieval, classification) can be run for that set of images.
 
-For the retrieval experiments, the set of database images for Places2 and CelebA are included in the Drive folder. For Hotels50k, those images can be downloaded [here](https://cs.slu.edu/~stylianou/images/hotels-50k/test.tar.lz4).
+For the retrieval experiments, the set of database images for Places2 and CelebA are included in the Drive folder. For Hotels50k, those images can be downloaded following the instructions outlined [here](https://github.com/GWUvision/Hotels-50K).
 
 Below are the list of inpainting methods that we evaluate in our paper (links to the Github repos of the learning-based methods are provided):
 
