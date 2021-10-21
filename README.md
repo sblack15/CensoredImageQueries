@@ -1,5 +1,5 @@
 # CensoredImageQueries
-Official Repository for the paper "Evaluation of Inpainting and Augmentation for Censored Image Queries". Currently, we only have included the code to reproduce our experiments on the Places2 and CelebA dataset. Hotels50k code will be added soon.
+Official Repository for the 2021 IJCV paper ["Evaluation of Inpainting and Augmentation for Censored Image Queries"](https://link.springer.com/article/10.1007/s11263-020-01403-1). Currently, we only have included the code to reproduce our experiments on the Places2 and CelebA dataset. Hotels50k code will be added soon.
 
 # Inpainting
 
